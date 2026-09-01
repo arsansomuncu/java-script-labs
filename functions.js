@@ -84,6 +84,29 @@ console.log(nextInLine(testArr,6));
 console.log("after: " + JSON.stringify(testArr));
 
 
+// returning boolean values from function
+
+function isLess(a,b){
+  if(a<b){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+console.log((10,15)); // true
+
+
+// returning early pattern from functions
+
+function abTest(a,b){
+  if(a<0 || b<0){
+    return undefined;
+  }
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b),2))
+}
+console.log(abTest(-2,2)) // undefined
+
 
 
 
